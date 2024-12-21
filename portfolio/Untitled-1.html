@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandon Mieres - Portafolio Personal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <style>
+        :root {
+            --primary-color: #64ffda;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand, .nav-link {
+            color: var(--text-color) !important;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+
+        .section {
+            padding: 100px 0;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: var(--text-color);
+        }
+
+        .btn-primary:hover {
+            background-color: #50e3c2;
+            border-color: #50e3c2;
+        }
+
+        .img-fluid {
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 50px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Brandon Mieres</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hhep">7 HHEP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2 data-aos="fade-right">About Me</h2>
+                <div class="row">
+                    <div class="col-md-4" data-aos="fade-right" data-aos-delay="200">
+                        <img src="brandon.jpg" alt="Brandon Mieres" class="img-fluid rounded-circle mb-3">
+                    </div>
+                    <div class="col-md-8" data-aos="fade-left" data-aos-delay="400">
+                        <h3>Why I Chose My Career</h3>
+                        <p>From an early age, I was always fascinated by how technological systems work and their role in connecting the world. This motivated me to specialize as a Higher Technician in Computer Network Systems Management, a field that combines advanced technology and solving complex problems.</p>
+                        
+                        <h3>Future Goals</h3>
+                        <p>My goals include specializing in network security and network architecture, ensuring robust and efficient technological infrastructures. Additionally, I plan to obtain advanced certifications such as CCNA and CEH to expand my competencies.</p>
+                        
+                        <h3>Skills</h3>
+                        <h4>Technical Skills</h4>
+                        <ul>
+                            <li>Configuration and administration of Linux/Unix systems.</li>
+                            <li>Management of LAN/WAN and VPN networks using tools like WireGuard.</li>
+                            <li>Installation and maintenance of Apache servers and SSL configuration.</li>
+                        </ul>
+                        
+                        <h4>Personal Skills</h4>
+                        <ul>
+                            <li>Effective problem-solving.</li>
+                            <li>Teamwork and leadership.</li>
+                            <li>Adaptability in dynamic environments.</li>
+                        </ul>
+                        
+                        <h3>Personal Paradigm</h3>
+                        <p>I firmly believe that continuous learning and innovation are essential to stay relevant in the field of information technology.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="section">
+            <div class="container">
+                <h2 data-aos="fade-right">Resume</h2>
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card">
+                            <h3>Work Experience</h3>
+                            <div class="mb-3">
+                                <h4>IT Maintenance</h4>
+                                <p>Freta Calella | 1 year</p>
+                                <ul>
+                                    <li>Maintenance of systems and networks.</li>
+                                    <li>Technical support for internal users.</li>
+                                    <li>Management of the institution's hardware and software.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card">
+                            <h3>Education</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h4>Higher Technician in Computer Network Systems Management</h4>
+                                    <p>INS:Sapalomera Blanes | 2022 - 2025</p>
+                                </li>
+                                <li>
+                                    <h4>Technician in Microcomputer Systems and Networks</h4>
+                                    <p>INS:Freta Calella| 2020 - 2022</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates" class="section">
+            <div class="container">
+                <h2 data-aos="fade-right">Certificates</h2>
+                <div class="row">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card">
+                            <img src="/img/cloud foundation.png" alt="Cloud Foundations - AWS" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Cloud Foundations - AWS</h5>
+                                <p class="card-text">2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card">
+                            <img src="/img/cloud operation.png" alt="Cloud Operations - AWS" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Cloud Operations - AWS</h5>
+                                <p class="card-text">2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="card">
+                            <img src="/img/dataENG.png" alt="Data Engineering - AWS" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Data Engineering - AWS</h5>
+                                <p class="card-text">2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card">
+                            <img src="/img/S1.png" alt="Introduction to Cloud - Semester 1" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Introduction to Cloud - Semester 1</h5>
+                                <p class="card-text">2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card">
+                            <img src="/img/S2.png" alt="Introduction to Cloud - Semester 2" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Introduction to Cloud - Semester 2</h5>
+                                <p class="card-text">2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="card">
+                            <img src="/img/hack2.png" alt="Introduction to Linux" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Introduction to Linux</h5>
+                                <p class="card-text">2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card">
+                            <img src="/img/hack1.png" alt="Linux Personalization" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Linux Personalization</h5>
+                                <p class="card-text">2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 data-aos="fade-right">Projects</h2>
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card">
+                            <img src="vpn-project.jpg" alt="VPN Project" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Implementation of a Secure VPN</h5>
+                                <p class="card-text">Configuration of a virtual private network using WireGuard for a medium-sized company.</p>
+                                <a href="#" class="btn btn-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card">
+                            <img src="ssl-project.jpg" alt="SSL Project" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">SSL Configuration on Apache</h5>
+                                <p class="card-text">Implementation of SSL certificates on an Apache server to enhance website security.</p>
+                                <a href="#" class="btn btn-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hhep" class="section">
+            <div class="container">
+                <h2 data-aos="fade-right">7 Habits of Highly Effective People</h2>
+                <div class="row">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card">
+                            <h4>1. Be Proactive</h4>
+                            <p>I strive to anticipate problems and propose solutions in my daily work, especially when managing critical networks.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card">
+                            <h4>2. Begin with the End in Mind</h4>
+                            <p>I always set clear goals before starting a project, ensuring results aligned with the client's needs.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="card">
+                            <h4>3. Put First Things First</h4>
+                            <p>Prioritizing critical tasks, such as ensuring network security, allows me to maximize efficiency in my work.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 data-aos="fade-right">Contact</h2>
+                <form id="contact-form" data-aos="fade-up" data-aos-delay="200">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>        
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 200
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contact-form');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const name = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const message = document.getElementById('message').value.trim();
+                    
+                    if (name === '' || email === '' || message === '') {
+                        alert('Por favor, rellena todos los campos');
+                        return;
+                    }
+                    
+                    if (!isValidEmail(email)) {
+                        alert('Por favor, introduce una dirección de email válida');
+                        return;
+                    }
+                    
+                    alert('¡Formulario enviado con éxito!');
+                    contactForm.reset();
+                });
+            }
+            
+            function isValidEmail(email) {
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(email);
+            }
+        });
+
+        // Añadir desplazamiento suave para los enlaces de navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
